@@ -1,0 +1,444 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Loja do Pacheco - Robux</title>
+  <style>
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #0f0f0f, #1f1f1f);
+      color: #fff;
+    }
+    .container {
+      max-width: 1300px;
+      margin: auto;
+      padding: 30px;
+      background: rgba(0, 0, 0, 0.85);
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,255,204,0.3);
+    }
+    h2 {
+      color: #00ffc8;
+      font-size: 28px;
+      border-bottom: 2px solid #00ffc8;
+      padding-bottom: 8px;
+    }
+    .section {
+      margin-bottom: 35px;
+      padding: 25px;
+      background: rgba(20, 20, 20, 0.9);
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,255,204,0.2);
+    }
+    .whatsapp-button {
+      background: linear-gradient(to right, #25D366, #1ebe5c);
+      color: white;
+      padding: 12px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-size: 16px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 15px;
+      transition: background 0.3s;
+    }
+    .whatsapp-button:hover {
+      background: #128C7E;
+    }
+    .pix-info {
+      background: #292929;
+      padding: 12px;
+      border-radius: 8px;
+      font-size: 16px;
+      margin-top: 12px;
+      box-shadow: 0 0 10px rgba(0,255,204,0.2);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #555;
+      padding: 14px;
+      text-align: center;
+    }
+    th {
+      background-color: #00ffc8;
+      color: #000;
+      font-size: 18px;
+    }
+    td {
+      background-color: #1a1a1a;
+      font-size: 16px;
+    }
+    .category-title {
+      font-size: 30px;
+      color: #00ffc8;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 3px solid #00ffc8;
+    }
+    ul, ol {
+      font-size: 16px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      padding: 10px 0;
+      display: flex;
+      justify-content: center;
+      z-index: 1100;
+    }
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 25px;
+    }
+    .navbar ul li a {
+      color: #00ffcc;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      transition: color 0.3s, transform 0.3s;
+    }
+    .navbar ul li a:hover {
+      color: #fff;
+      transform: scale(1.1);
+    }
+
+
+    body {
+      padding-top: 100px;
+    }
+    .top-header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 20px 0;
+      text-align: center;
+      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+    .logo {
+      color: #00ff99;
+      font-size: 32px;
+      font-weight: bold;
+      margin: 0;
+      text-shadow: 2px 2px 8px #000;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #00ff99, 0 0 20px #00cc88;
+      }
+      to {
+        text-shadow: 0 0 20px #00ff99, 0 0 40px #00cc88;
+      }
+    }
+
+
+    @keyframes fadeInUp {
+      0% {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .animated-section {
+      animation: fadeInUp 1s ease forwards;
+      opacity: 0;
+    }
+    .container {
+      animation: fadeInUp 1.5s ease forwards;
+    }
+    
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('file-1Vu75SQaxzoDWLK5SVaRxj') no-repeat center center fixed;
+      background-size: cover;
+      background-size: cover;
+      color: #fff;
+    }
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.65);
+      min-height: 100vh;
+      padding: 30px;
+    }
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+    h1.bem-vindo {
+      animation: pulse 2s infinite;
+      text-shadow: 3px 3px 12px #000;
+      text-shadow: 2px 2px 10px #000;
+      font-size: 40px;
+      text-align: center;
+      background: linear-gradient(145deg, rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+      padding: 30px;
+      border-radius: 20px;
+      color: #00ff99;
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #00ff99;
+      border-bottom: 2px solid #00ff99;
+      padding-bottom: 5px;
+    }
+    .section {
+      margin-bottom: 30px;
+      padding: 30px;
+      background: linear-gradient(145deg, rgba(0,0,0,0.6), rgba(0,0,0,0.3));
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    }
+    .whatsapp-button {
+      transition: background 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      background: #25D366;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 5px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 10px;
+      font-size: 20px;
+    }
+    .whatsapp-button:hover {
+      transform: scale(1.05);
+      background: #1ebe5c;
+    }
+    .pix-info {
+      background: #333;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 10px;
+      font-size: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      font-size: 20px;
+    }
+    th, td {
+      border: 1px solid #444;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #00ff99;
+      color: #000;
+    }
+    td {
+      background-color: #2c2c2c;
+    }
+    .category-title {
+      font-size: 26px;
+      color: #00ff99;
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #00ff99;
+    }
+  @keyframes pulse {
+      0% { text-shadow: 0 0 10px #00ff99; }
+      50% { text-shadow: 0 0 20px #00cc88; }
+      100% { text-shadow: 0 0 10px #00ff99; }
+    }
+    
+    .footer {
+      background: rgba(0, 0, 0, 0.85);
+      color: #00ffcc;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+      font-weight: bold;
+      font-size: 16px;
+      box-shadow: 0 -2px 12px rgba(0,0,0,0.5);
+    }
+    
+    .carousel {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      padding: 10px;
+    }
+    .carousel img {
+      height: 200px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,255,204,0.7);
+      transition: transform 0.4s;
+    }
+    .carousel img:hover {
+      transform: scale(1.05);
+    }
+
+
+    .testimonial-photos {
+      display: flex;
+      gap: 15px;
+      margin-top: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .testimonial-photos img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      border: 3px solid #00ffcc;
+      box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+    }
+
+</style>
+    
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#robux">Pacotes</a></li>
+      <li><a href="#como-comprar">Como Comprar</a></li>
+      <li><a href="#aviso">Aviso</a></li>
+      <li><a href="#suporte">Suporte</a></li>
+      <li><a href="#passo">Passo a Passo</a></li>
+    </ul>
+  </nav>
+  <header class="top-header">
+    <h1 class="logo">Loja do Pacheco</h1>
+  </header>
+  <div class="overlay">
+    <div class="container">
+      <h1 class="bem-vindo">Seja bem-vindo à Loja do Pacheco</h1>
+
+      <div class="category" id="robux">
+        <h2 class="category-title">Pacotes de Robux</h2>
+        <div class="section animated-section">
+          <table>
+            <tr>
+              <th>Quantidade</th>
+              <th>Preço (R$)</th>
+            </tr>
+            <tr><td>80</td><td>0,99</td></tr>
+            <tr><td>400</td><td>4,99</td></tr>
+            <tr><td>800</td><td>8,99</td></tr>
+            <tr><td>1.700</td><td>16,99</td></tr>
+            <tr><td>2.500</td><td>22,99</td></tr>
+            <tr><td>4.500</td><td>39,99</td></tr>
+            <tr><td>10.000</td><td>79,99</td></tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="category" id="robux">
+        <h2 class="category-title" id="como-comprar">Como Comprar</h2>
+        <div class="section animated-section">
+          <ol>
+            <li>Escolha o pacote desejado na tabela acima.</li>
+            <li>Faça o pagamento via PIX:</li>
+          </ol>
+          <div class="pix-info">
+            Chave PIX (E-mail): <strong>guilhermepach244@gmail.com</strong><br>
+            Nome: Guilherme
+          </div>
+          <p>Depois, envie o comprovante e seu nome de usuário da Roblox:</p>
+          <a class="whatsapp-button" href="https://wa.me/5551998134777" target="_blank">Enviar Comprovante</a>
+        </div>
+      </div>
+
+      <div class="category" id="robux">
+        <h2 class="category-title" id="aviso">Aviso</h2>
+        <div class="section animated-section">
+          <p>O envio dos Robux é feito manualmente após a confirmação do pagamento. Tempo estimado: até 1 hora.</p>
+        </div>
+      </div>
+
+      <div class="category" id="robux">
+        <h2 class="category-title" id="suporte">Suporte</h2>
+        <div class="section animated-section">
+          <p>Se você tiver alguma dúvida ou problema, entre em contato com o suporte:</p>
+          <a class="whatsapp-button" href="https://wa.me/5551998134777" target="_blank">Falar com Suporte</a>
+        </div>
+      </div>
+
+      <div class="category" id="robux">
+        <h2 class="category-title" id="passo">Ajuda - Passo a Passo</h2>
+        <div class="section animated-section">
+          <ol>
+            <li>Escolha o pacote de Robux.</li>
+            <li>Faça o pagamento via PIX.</li>
+            <li>Envie o comprovante com seu nome de usuário da Roblox por WhatsApp ou e-mail: <strong>guilhermepach244@gmail.com</strong>.</li>
+            <li>Após a confirmação, os Robux serão entregues em até 1 hora.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Categoria 6: Depoimentos -->
+    <div class="category" id="depoimentos">
+      <h2 class="category-title">Depoimentos de Clientes</h2>
+      <div class="section animated-section">
+        <p><strong>Maria G.:</strong> "Comprei e recebi meus Robux em menos de 30 minutos! Super confiável."</p>
+        <p><strong>João P.:</strong> "Atendimento ótimo pelo WhatsApp. Recomendo muito."</p>
+        <p><strong>Luana F.:</strong> "Melhor loja de Robux que já usei. 10/10!"</p>
+        <p><strong>Gabriel S.:</strong> "Achei muito rápido e seguro. Vou comprar novamente."</p>
+        <p><strong>Ana L.:</strong> "Adorei! O atendimento foi muito atencioso."</p>
+        <p><strong>Lucas M.:</strong> "Site confiável, entrega garantida. Recomendo!"</p>
+        <p><strong>Beatriz T.:</strong> "Meus filhos ficaram super felizes! Obrigada."</p>
+
+      
+</div>
+    </div>
+
+    <!-- Categoria 7: Perguntas Frequentes -->
+    <div class="category" id="faq">
+      <h2 class="category-title">Perguntas Frequentes</h2>
+      <div class="section animated-section">
+        <p><strong>1. Quanto tempo demora para receber?</strong><br>Até 1 hora após a confirmação do pagamento.</p>
+        <p><strong>2. Posso pagar de outra forma?</strong><br>No momento, apenas via PIX.</p>
+        <p><strong>3. É confiável?</strong><br>Sim! Veja os depoimentos dos nossos clientes acima.</p>
+      </div>
+    </div>
+
+    
+    <!-- Categoria 8: Por Que Comprar Conosco -->
+    <div class="category" id="vantagens">
+      <h2 class="category-title">Por Que Comprar Conosco?</h2>
+      <div class="section animated-section">
+        <ul>
+          <li>Entrega rápida em até 1 hora!</li>
+          <li>Atendimento personalizado via WhatsApp</li>
+          <li>Preços mais baratos do que a loja oficial</li>
+          <li>Segurança total: pagamento via PIX com confirmação</li>
+          <li>Mais de 500 clientes satisfeitos</li>
+        </ul>
+      </div>
+    </div>
+    
+<!-- Rodapé -->
+    <footer class="footer">
+      <p>&copy; 2025 Loja do Pacheco. Todos os direitos reservados.</p>
+    </footer>
+
+</div>
+</body>
+</html>
